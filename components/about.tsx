@@ -35,12 +35,14 @@ export default function About() {
             className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
           >
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <img
-                src="/professional-developer-workspace.jpg"
-                alt="Nihar Das Roy"
-                className="rounded-lg shadow-2xl relative z-10 w-full"
-              />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/nihar-das-roy.png"
+                  alt="Nihar Das Roy - Professional Web Developer"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
           </div>
 
@@ -48,17 +50,18 @@ export default function About() {
             className={`transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
           >
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              I'm a professional web developer with a passion for creating beautiful, functional, and animated digital
-              experiences. With expertise in modern web technologies, I transform ideas into reality.
+              I'm Nihar Das Roy, a professional web developer with a passion for creating beautiful, functional, and
+              animated digital experiences. With expertise in modern web technologies, I transform ideas into reality.
             </p>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               My journey in web development has equipped me with skills in React, Next.js, TypeScript, and Tailwind CSS.
-              I believe in writing clean, maintainable code and delivering exceptional user experiences.
+              I believe in writing clean, maintainable code and delivering exceptional user experiences through smooth
+              animations and intuitive interfaces.
             </p>
 
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-foreground">Skills</h3>
+              <h3 className="text-xl font-semibold text-foreground">Skills & Expertise</h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   "React",
@@ -68,7 +71,7 @@ export default function About() {
                   "Node.js",
                   "JavaScript",
                   "Web Animation",
-                  "UI/UX",
+                  "UI/UX Design",
                 ].map((skill, index) => (
                   <span
                     key={skill}
@@ -79,6 +82,26 @@ export default function About() {
                   </span>
                 ))}
               </div>
+            </div>
+
+            <div className="mt-8 pt-8 border-t border-primary/20 space-y-3">
+              <p className="text-sm text-muted-foreground">
+                <span className="font-semibold text-foreground">Email:</span> nihardasroy8@gmail.com
+              </p>
+              <p className="text-sm text-muted-foreground">
+                <span className="font-semibold text-foreground">Phone:</span> +880 1736726537
+              </p>
+              <p className="text-sm text-muted-foreground">
+                <span className="font-semibold text-foreground">LinkedIn:</span>{" "}
+                <a
+                  href="https://www.linkedin.com/in/nihar-das-roy-532859365/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-accent transition-colors duration-300"
+                >
+                  linkedin.com/in/nihar-das-roy-532859365
+                </a>
+              </p>
             </div>
           </div>
         </div>
